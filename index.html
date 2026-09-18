@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Performance Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div class="hero-left">
+        <div class="brand-mark">BP</div>
+        <div>
+          <div class="eyebrow">MONTHLY PERFORMANCE REPORT</div>
+          <h1>Business Performance Dashboard</h1>
+          <p>Recharge performance, deployments and active subscription overview</p>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="live-pill"><span></span> Live Dashboard</div>
+        <div class="report-date" id="report-date"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">01 · RECHARGE PERFORMANCE</div>
+            <h2>Recharge Rate — Due Month Wise</h2>
+          </div>
+          <div class="section-note">Monthly rate with quarterly average</div>
+        </div>
+
+        <div id="recharge-years" class="fy-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">02 · DEPLOYMENT & SUBSCRIPTION</div>
+            <h2>Deployment &amp; Active Subscription</h2>
+          </div>
+          <div class="section-note">Based on Query 551</div>
+        </div>
+
+        <div id="kpi-cards" class="kpi-grid"></div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>Financial Year Summary</h3>
+              <p>Deployment base and currently active subscriptions</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="deployment-table">
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Source: Metabase Query 514 &amp; Query 551</span>
+      <span>Frontend: GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
