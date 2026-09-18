@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Business Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <h1>Monthly Business Dashboard</h1>
+        <p class="subtitle">Recharge Rate &amp; Deployment / Active Subscription Summary</p>
+      </div>
+      <div class="status">
+        <span class="status-dot"></span>
+        <span>Dashboard</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <h2>Recharge Rate Summary – Due Month Wise</h2>
+            <p>Monthly recharge performance grouped by financial year and quarter.</p>
+          </div>
+        </div>
+
+        <div id="recharge-years" class="fy-grid"></div>
+      </section>
+
+      <section class="section deployment-section">
+        <div class="section-heading">
+          <div>
+            <h2>Deployment / Active Subscription</h2>
+            <p>Deployment and active-subscription summary from Query 551.</p>
+          </div>
+        </div>
+
+        <div id="kpi-cards" class="kpi-grid"></div>
+
+        <div class="table-card">
+          <div class="table-title">FY Deployment &amp; Active Subscription Summary</div>
+          <div class="table-wrap">
+            <table id="deployment-table">
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Data source: Metabase Queries 514 &amp; 551</span>
+      <span id="last-updated"></span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
